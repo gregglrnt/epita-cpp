@@ -1,0 +1,1 @@
+Dans main.cpp, on pourrait vérifier le cas si le nombre renseigné n'est pas un int
