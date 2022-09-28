@@ -1,0 +1,24 @@
+Salut les gars,
+
+Ci-dessous le code review de votre travail : 
+
+1) is_prime_prog
+Dans main.cpp, on pourrait vérifier le cas si le nombre renseigné n'est pas un int
+
+
+2) find_motive
+
+./main path/to/test.txt "test" : pas bon car affiche toutes les occurrences du mot test alors que le programme ne doit prendre que la première occurrence du motif si il est présent dans le même mot plusieurs fois
+par exemple dans un fichier test.txt contenant et en cherchant le motif test  :
+efoerf
+erfer
+test
+fokvfotest
+test
+testeferfmerf
+test
+t
+Le résultat devrait être 3 occurrences et non pas 5 comme votre code affiche
+Respect des arguments : OK
+
+Bon courage,
