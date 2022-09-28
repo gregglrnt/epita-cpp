@@ -10,36 +10,36 @@
 #include <map>
 #include <string>
 
-using namespace std;
-typedef map<string, int> StrIntMap;
 
-void find_motive(istream& in, StrIntMap& words ,string w) {
-    string s;
+unsigned find_motive(std::istream& in,std::string w) {
+    std::string s;
+    int count=0;
     while (in >> s) {
         // Find position of string and Check if position is -1 or not
-        if(s.find(w)!= string::npos){
-                ++words[s];
+        if(s.find(w)!= std::string::npos){
+            count++;
         }
     }
+    return count;
 }
+
 
 int main(int argc, char** argv) {
 
     if (argc < 3)
         return(EXIT_FAILURE);
-    
-    ifstream in(argv[1]);
-    
-    if (!in.is_open())
-        cout << "The file *" << argv[1] << "* could not be opened." << endl;
-    else{
-        string motive = argv[2];
-        StrIntMap wo;
-        find_motive(in, wo, motive);
-        cout << motive << " occurred "
-            << wo.size() << " times.\n";
-    
-    }
 
+    std::ifstream in(argv[1]);
+
+    if (!in.is_open()){
+        std::cout << "The file *" << argv[1] << "* could not be opened.";
+        return 1;
+
+    }
+    else{
+        std::string motive = argv[2];
+        std::cout << " The file " << argv[1] << "contains " << find_motive(in, motive) << " words containing the motive " << motive;
+    }
+    
     return 0;
 }
