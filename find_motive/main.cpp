@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
     }
     else{
         std::string motive = argv[2];
-        std::cout << " The file " << argv[1] << "contains " << find_motive(in, motive) << " words containing the motive " << motive;
+        std::cout << " The file " << argv[1] << " contains " << find_motive(in, motive) << " words containing the motive " << motive;
     }
     
     return 0;
