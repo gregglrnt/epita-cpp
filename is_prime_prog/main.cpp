@@ -1,3 +1,4 @@
+/// pape ibrahima diawara
 #include <iostream>
 
 bool est_premier(int p)
