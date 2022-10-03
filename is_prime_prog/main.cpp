@@ -1,13 +1,14 @@
 #include <iostream>
 
-bool est_premier(int x)
+bool est_premier(int p)
 {
-    if (x <= 1) {
+    
+    if (p <= 1) {
         return false;
     }
 
-    for (int i = 2; i <= x/2; ++i) {
-        if (x % i == 0) {
+    for (int i = 2; i <= p/2; ++i) {
+        if (p % i == 0) {
             return false;
         }
     }
