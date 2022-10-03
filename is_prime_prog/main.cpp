@@ -1,21 +1,31 @@
+/// pape ibrahima diawara
 #include <iostream>
 
-int main() {
-    int x;
+bool est_premier(int p)
+{
     
-    while(std::cin>>x) {
-    
-        bool is_prime = true;
-
-        for (int i = x; i >= 2; i--) {
-            if (x % i == 0) is_prime = false; break;
-        }
-
-        if( x == 0 || x == 1 ) is_prime = false;
-
-        if (is_prime) std::cout << x << " is a prime : True \n";
-        else std::cout << x << " is a prime : False \n";
+    if (p <= 1) {
+        return false;
     }
-    
-    exit; 
+
+    for (int i = 2; i <= p/2; ++i) {
+        if (p % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main(int argc, char *argv[])
+{
+    int n;
+    while(std::cin >> n)
+    {
+        if(est_premier(n))
+        {
+            std::cout << n << " is a prime: True\n";
+        }else
+            std::cout << n << " is a prime: False\n";
+    }
+    return 0;
 }
