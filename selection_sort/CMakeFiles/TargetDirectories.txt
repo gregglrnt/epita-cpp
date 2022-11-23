@@ -1,0 +1,3 @@
+/home/greg/Documents/cplusplus/selection_sort/CMakeFiles/simple_example.dir
+/home/greg/Documents/cplusplus/selection_sort/CMakeFiles/edit_cache.dir
+/home/greg/Documents/cplusplus/selection_sort/CMakeFiles/rebuild_cache.dir
