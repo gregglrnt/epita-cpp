@@ -1,0 +1,3 @@
+/home/greg/Documents/cplusplus/epita-cpp/selection_sort_file_meta/build/CMakeFiles/main.dir
+/home/greg/Documents/cplusplus/epita-cpp/selection_sort_file_meta/build/CMakeFiles/edit_cache.dir
+/home/greg/Documents/cplusplus/epita-cpp/selection_sort_file_meta/build/CMakeFiles/rebuild_cache.dir
